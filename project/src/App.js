@@ -52,6 +52,7 @@ function App() {
         <i onClick={()=>{
         if(!editTodo){
        setTodos([...todos,{id: uuidv4(),title:input,completed:false }])
+       setInput('')
         }else{
           updateTodo(input,editTodo.id,editTodo.completed)
         }
